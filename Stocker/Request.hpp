@@ -27,7 +27,7 @@ public:
 class Request {
 
 	std::vector<Request> m_subRequestList;
-	RequestObject m_data;
+	std::unique_ptr<RequestObject> m_data = nullptr;
 	std::string m_name;
 	time_t m_timeOfRequest;
 
@@ -38,10 +38,10 @@ public:
 		Failed
 	};
 	
-	Request(std::string name);
+	Request(std::string name) : m_name(name) {}
 
-	// Populate the data of this request by contacting the world wide trading api
-	eResult		  Fetch();
+	// Populate the data of this request by passing in the query string
+	RequestObject		  Fetch(std::string queryObj);
 
 	// Retrieve the underlying data of this request
 	RequestObject Data();

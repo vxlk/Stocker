@@ -3,13 +3,16 @@
 
 namespace data {
 
-Request::eResult Request::Fetch() {
-	return Request::eResult::Succeeded;
+RequestObject Request::Fetch(std::string queryObj) {
+	JSONObject obj;
+	obj.parse(queryObj);
+	return { obj };
 }
 
 
 RequestObject Request::Data() {
-	return m_data;
+	// poop
+	return *m_data;
 }
 
 } //namespace data

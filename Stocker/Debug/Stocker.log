@@ -1,4 +1,6 @@
-﻿  Main.cpp
-  Request.cpp
+﻿  ConsoleUI.cpp
+  Main.cpp
+  Repository.cpp
+  Stocker.cpp
   Generating Code...
   Stocker.vcxproj -> C:\Users\small\source\repos\Stocker\Debug\Stocker.exe
