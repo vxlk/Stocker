@@ -8,6 +8,7 @@ Stocker::Stocker(Stocker::eUIType uiLevel) {
 		case Stocker::eUIType::Console: m_pUI = std::make_unique<ConsoleUI>();
 	}
 	m_pRepo = std::make_unique<data::Repository>();
+	m_pTimekeeper = std::make_unique<TimedEvent>();
 }
 void Stocker::RunRequestTemporary() {
 	assert(m_pRepo && m_pUI);

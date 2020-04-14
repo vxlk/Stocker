@@ -4,6 +4,7 @@
 
 #include "IUI.hpp"
 #include "Repository.hpp"
+#include "TimedEvent.hpp"
 
 class Stocker {
 public:
@@ -23,13 +24,14 @@ public:
 	data::Repository* Repository() const noexcept { return m_pRepo.get(); }
 
 	// Non-copyable object
-	Stocker() = delete;
+	Stocker()						   = delete;
 	Stocker& operator=(const Stocker&) = delete;
-	Stocker(const Stocker&) = delete;
+	Stocker(const Stocker&)			   = delete;
 
 private:
-	std::unique_ptr<IUI> m_pUI;
+	std::unique_ptr<IUI>			  m_pUI;
 	std::unique_ptr<data::Repository> m_pRepo;
+	std::unique_ptr<TimedEvent>		  m_pTimekeeper;
 };
 
 // -------------------------------------------------------------------
