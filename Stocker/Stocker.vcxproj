@@ -156,6 +156,7 @@
     <ClCompile Include="Repository.cpp" />
     <ClCompile Include="Request.cpp" />
     <ClCompile Include="Stocker.cpp" />
+    <ClCompile Include="TimedEvent.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ConsoleUI.hpp" />
@@ -163,6 +164,7 @@
     <ClInclude Include="Repository.hpp" />
     <ClInclude Include="Request.hpp" />
     <ClInclude Include="Stocker.hpp" />
+    <ClInclude Include="TimedEvent.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,0 +1,19 @@
+﻿  ConsoleUI.cpp
+  Main.cpp
+C:\Users\small\Desktop\Stocker\Stocker\Request.hpp(55,40): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+  Repository.cpp
+C:\Users\small\Desktop\Stocker\Stocker\Request.hpp(55,40): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+  Request.cpp
+C:\Users\small\Desktop\Stocker\Stocker\Request.hpp(55,40): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+  Stocker.cpp
+C:\Users\small\Desktop\Stocker\Stocker\Request.hpp(55,40): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+  TimedEvent.cpp
+  Generating Code...
+C:\Users\small\Desktop\Stocker\Stocker\Request.hpp(55,40): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+Repository.obj : error LNK2019: unresolved external symbol __imp_curl_easy_strerror referenced in function "public: enum data::Request::eResult __cdecl data::Repository::Query(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?Query@Repository@data@@QEAA?AW4eResult@Request@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Repository.obj : error LNK2019: unresolved external symbol __imp_curl_easy_init referenced in function "public: __cdecl data::Repository::Repository(void)" (??0Repository@data@@QEAA@XZ)
+Repository.obj : error LNK2019: unresolved external symbol __imp_curl_easy_setopt referenced in function "public: __cdecl data::Repository::Repository(void)" (??0Repository@data@@QEAA@XZ)
+Repository.obj : error LNK2019: unresolved external symbol __imp_curl_easy_perform referenced in function "public: enum data::Request::eResult __cdecl data::Repository::Query(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?Query@Repository@data@@QEAA?AW4eResult@Request@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Repository.obj : error LNK2019: unresolved external symbol __imp_curl_easy_cleanup referenced in function "public: __cdecl data::Repository::~Repository(void)" (??1Repository@data@@QEAA@XZ)
+curl\libcurl-vc14-x86-release-static-ipv6-sspi-winssl\lib\libcurl_a.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\small\Desktop\Stocker\x64\Debug\Stocker.exe : fatal error LNK1120: 5 unresolved externals

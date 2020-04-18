@@ -26,15 +26,15 @@ public:
 	// Construct and keep track of the current time
 	TimedEvent();
 	// Free the thread if we need to
-	~TimedEvent();
+	~TimedEvent() = default;
 
-	void AddEvent(std::function<void()>, std::string);
-	void RemoveEvent(std::string);
+	void AddEvent(std::function<void()>, std::string) {}
+	void RemoveEvent(std::string) {}
 
 	void SetShouldBlock(bool onOrOff) { isLooping = onOrOff; }
 
 	// Blocks and calls callback functions on set time
-	bool Loop();
+	bool Loop() { return true; }
 
 	TimedEvent& operator=(const TimedEvent&) = delete;
 	TimedEvent(const TimedEvent&) = delete;
